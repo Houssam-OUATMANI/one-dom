@@ -27,15 +27,11 @@ class ContactFormRequest extends FormRequest
             'firstname' => ['string', 'required'],
             'lastname' => ['string', 'required'],
             'email' => ['string', 'email', 'required'],
-            'phone' => ['required', 'numeric'],
+            'phone' => ['required', 'regex:/^\d+( \d+)*$/'],
             'message' => ['string', 'required'],
             'category_id' => ['string', 'required']
         ];
 
       
     }
-
-
- 
-
 }

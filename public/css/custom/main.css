@@ -1025,3 +1025,8 @@ textarea.form-control {
 .contact-form-border_error {
   border: 1px solid red !important;
 }
+
+
+textarea {
+  resize: none ;
+}

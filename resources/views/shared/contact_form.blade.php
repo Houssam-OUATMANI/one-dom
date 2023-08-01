@@ -1,4 +1,4 @@
-   @include('components.flash')
+   @include('../components.flash')
 <form action="{{ route('contact.store') }}" method="post">
     @csrf
     <div class="row">
