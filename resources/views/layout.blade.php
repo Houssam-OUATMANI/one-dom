@@ -47,8 +47,8 @@
 </head>
 
 <body>
- 
-    @yield('body')
+@include('components.flash')
+@yield('body')
 </body>
 
 </html>

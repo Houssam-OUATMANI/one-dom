@@ -1,6 +1,7 @@
-   @include('../components.flash')
-<form action="{{ route('contact.store') }}" method="post">
-    @csrf
+
+@include('components.flash')
+<form action="{{route('contact.store')}}" method="post">
+    @csrf()
     <div class="row">
         <div class="col-lg-6">
             @include('components.input', ['name' => 'firstname', 'placeholder' => 'Prénom'])
@@ -17,7 +18,7 @@
         <div class="col-lg-12">
             <div class="form-group ">
                 <label class="d-block text-center">Sujet</label>
-                <select class="form-control w-100 service_select_js" name="category"
+                <select class="form-control w-100 service_select_js" name="category_id"
                     style="background-color: #fff; border: 1px solid #bbc0c8;">
                     @foreach ($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>

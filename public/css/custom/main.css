@@ -1020,13 +1020,19 @@ textarea.form-control {
 
 
 
-/* custom Css added by the developer of the website */
+/* custom Css added by the developer of the website  */
 
 .contact-form-border_error {
   border: 1px solid red !important;
 }
 
 
+/* custom Css added by the developer of the website  */
 textarea {
   resize: none ;
+}
+
+#alert {
+    transition: 0.3s;
+    margin-bottom: 10px;
 }

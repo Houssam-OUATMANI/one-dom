@@ -8,6 +8,6 @@ class ContactService
 
     public function store($contact)
     {
-        Contact::query()->create($contact);
+
     }
 }
