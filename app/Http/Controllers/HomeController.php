@@ -12,7 +12,7 @@ class HomeController extends Controller
     }
 
     public function index () {
-        $cateories = $this->categoryService->index();
-        return view('main.index', compact('cateories'));
+        $categories = $this->categoryService->index();
+        return view('main.index', compact('categories'));
     }
 }

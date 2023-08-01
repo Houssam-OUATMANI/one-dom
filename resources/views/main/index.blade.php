@@ -5,6 +5,7 @@
 @section('title', $title)
 
 @section('body')
+    @include('main.navbar')
     <section class="banner-part">
         <div class="banner-bg">
             <div class="container">
@@ -13,7 +14,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner-img">
-                            <img src="{{asset('images/hero.png')}}" alt="hero">
+                            <img src="{{asset('images/banner/hero.png')}}" alt="hero">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -673,7 +674,7 @@
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <div class="contact-img">
-                        <img src="{{asset('images/contact.png')}}" alt="contact">
+                        <img src="{{asset('images/banner/contact.png')}}" alt="contact">
                     </div>
                 </div>
             </div>

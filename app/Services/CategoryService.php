@@ -7,6 +7,6 @@ use App\Models\category;
 class CategoryService
 {
     public function index() {
-        return category::all();
+        return Category::all();
     }
 }

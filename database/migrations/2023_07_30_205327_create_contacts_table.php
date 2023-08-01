@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('phone');
             $table->longText('message');
             $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('category');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }
